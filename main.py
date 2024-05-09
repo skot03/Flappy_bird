@@ -3,13 +3,16 @@ from pygame.locals import *
 import random
 
 pygame.init()
-window_width = 400
-window_height =400
+window_width = 864
+window_height = 800
+background = pygame.image.load("bg.png")
 pygame.display.set_caption("flappy bird game")
-window=pygame.display.set_mode((window_width,window_height))
-is_game_running=True
+window = pygame.display.set_mode((window_width, window_height))
+is_game_running = True
 while is_game_running:
+    window.blit(background, (0, 0))
     for event in pygame.event.get():
-        if event.type==pygame.QUIT:
-            is_game_running=False
+        if event.type == pygame.QUIT:
+            is_game_running = False
+    pygame.display.update()
 pygame.quit()
