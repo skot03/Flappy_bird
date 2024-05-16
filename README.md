@@ -10,6 +10,7 @@ This project is a simple Flappy Bird clone created using Pygame. The game was bu
 - Animated bird character
 - Scrolling background and ground
 - Simple collision detection
+- Losing game (bird stop rotating and ground also stop rotating)
 
 ## Getting Started
 
